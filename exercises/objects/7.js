@@ -33,6 +33,13 @@ const array_obj2 = (obj) => {
   return result;
 };
 
+const array_obj3 = (obj) => {
+  return Object.keys(obj).reduce((acc, item) => {
+    acc[item] = Math.random();
+    acc["value_copy"] = obj[item];
+  }, {});
+};
+
 console.log("S1");
 array_obj(obj).forEach((item) => {
   console.log(item);

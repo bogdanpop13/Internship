@@ -4,9 +4,9 @@ const user = {
   age: 23,
 };
 
-const getUserFullName = (user) => {
-  return user.firstName + " " + user.lastName;
-};
+const { firstName, lastName } = user;
+
+const getUserFullName = (user) => `${user.firstName} ${user.lastName}`;
 
 const getUserFullName2 = user.firstName + " " + user.lastName;
 

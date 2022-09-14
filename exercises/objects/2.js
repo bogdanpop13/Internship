@@ -8,7 +8,7 @@ const sumOfEntries = (obj) => {
   const values = Object.values(obj);
   let sum = 0;
 
-  for (let value of values) {
+  values.forEach((value) => {
     if (
       !isNaN(value) &&
       String(value) !== "true" &&
@@ -16,7 +16,7 @@ const sumOfEntries = (obj) => {
     ) {
       sum += value;
     }
-  }
+  });
 
   return sum;
 };

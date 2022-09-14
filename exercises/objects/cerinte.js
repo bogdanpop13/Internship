@@ -22,7 +22,9 @@ const check = (obj, popertyToCheck) => { return true/false }  mai multe rez
 6. Write a JavaScript function to convert an object into a list of `[key, value]` pairs. 
 [['key1, val1'], ['key2, val2'] etc
 ​
-7. Write a Javascript function to transform an object with `[key, value]` pairs into an array of objects. The array objects should be 
+7. Write a Javascript function to transform an object
+ with `[key, value]` pairs into an array of objects. 
+ The array objects should be 
 const array_obj = {[key]: random number, value_copy: value  }
 ​
 8. Write a JavaScript function to get a copy of 

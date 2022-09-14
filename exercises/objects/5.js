@@ -21,7 +21,7 @@ const check2 = (obj, propertyToCheck) => {
 };
 
 const check3 = (obj, propertyToCheck) => {
-  return propertyToCheck in obj;
+  return obj.hasOwnProperty(propertyToCheck);
 };
 
 console.log("s1", check(obj, "1"));

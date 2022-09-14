@@ -19,6 +19,14 @@ const changeObj = (obj) => {
   return result;
 };
 
+const changeObj2 = (obj) => {
+  return Object.keys(obj).reduce((acc, item) => {
+    if (obj[item]) {
+      acc[item] = obj[item];
+    }
+  }, {});
+};
+
 const validObj = changeObj(obj);
 Object.entries(validObj).forEach((item) => {
   console.log(item);

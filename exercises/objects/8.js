@@ -27,5 +27,11 @@ const changeObj2 = (obj) => {
   return result;
 };
 
+const changeObj3 = (obj) => {
+  return Object.keys(obj).reduce((acc, item) => {
+    acc[obj[item]] = item;
+  }, {});
+};
+
 console.log("S1", changeObj(obj));
 console.log("S2", changeObj2(obj));
